@@ -1,0 +1,73 @@
+.admin_user {
+    &__table {
+        .search {
+            width: 225px;
+            margin-bottom: 30px;
+            position: relative;
+            margin-left: 12px;
+            input {
+                width: 100%;
+            }
+            img {
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 15px;
+            }
+
+        }
+        .thead {
+            justify-content: space-between;
+        }
+        .col {
+            width: calc((100% - 200px) / 5);
+        }
+    }
+}
+@include device1050(){
+    .admin_user__table {
+        .col {
+            width: calc((100% - 150px)/ 5);
+        }
+    }
+}
+@include device996(){
+    .admin_user{
+        &__table{
+            .search{
+                &:after{
+                    right: 30px;
+                }
+            }
+        }
+    }
+}
+
+@include device768(){
+    .admin_user{
+        &__table{
+            .search{
+                width: 100%;
+                input{
+                    width: 100%;
+                }
+                &:after{
+                    right: 10px;
+                }
+            }
+        }
+    }
+}
+
+@include device650(){
+    .admin_user{
+        &__table{
+            .search{
+                margin-left: 0;
+            }
+        }
+    }
+}

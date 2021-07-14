@@ -1,0 +1,22 @@
+.admin_tickets, .admin_deposit {
+    .body_table {
+        .row {
+            padding-left: 35px;
+        }
+        .col {
+            width: 20%;
+            text-align: left;
+            padding-right: 10px;
+        }
+    }
+}
+
+@include device1050(){
+    .admin_tickets, .admin_deposit {
+        .body_table {
+            .col {
+                width: 25%;
+            }
+        }
+    }
+}

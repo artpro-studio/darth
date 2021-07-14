@@ -1,0 +1,211 @@
+<!--#set var="title" value="OptimizedHTML 5" -->
+<!--#include virtual="/parts/header.html" -->
+
+<section class="admin_user">
+    <div class="header admin_user__header">
+        <div class="header__left">
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <a href="/" class="header__logo">
+                <img src="images/dist/logo.png" alt="Darth Maul Shop">
+            </a>
+        </div>
+
+        <div class="header__title">
+            ADMIN PANEL
+        </div>
+    </div>
+    <div class="content">
+        <div class="left">
+            <div class="menu">
+                <div class="user">
+                    <span class="menu__close">
+                        <span></span>
+                    </span>
+                    <img src="images/dist/user.png" alt="Alesha" class="user-icon">
+                    <span>
+                        <span>Alesha</span>
+                        <span class="green">Administator</span>
+                    </span>
+                    <a href="/">
+                        <img src="images/dist/logout.png" alt="logout" class="logout-icon">
+                    </a>
+                </div>
+
+                <a href="/" class="menu__item active">
+                    <span class="figure"></span>
+                    <span>User</span>
+                </a>
+                <a href="/" class="menu__item">
+                    <span class="figure"></span>
+                    <span>Tickets</span>
+                </a>
+                <a href="/" class="menu__item">
+                    <span class="figure"></span>
+                    <span>Deposit History</span>
+                </a>
+                <a href="/" class="menu__item">
+                    <span class="figure"></span>
+                    <span>Category</span>
+                </a>
+                <a href="/" class="menu__item">
+                    <span class="figure"></span>
+                    <span>Logs</span>
+                </a>
+                <a href="/" class="menu__item">
+                    <span class="figure"></span>
+                    <span>News&Contact</span>
+                </a>
+                <a href="/" class="menu__item">
+                    <span class="figure"></span>
+                    <span>Shop Log</span>
+                </a>
+                <a href="/" class="menu__item">
+                    <span class="figure"></span>
+                    <span>Change Password</span>
+                </a>
+            </div>
+
+            <ul class="statistics">
+                <li>
+                    <span>Total:</span>
+                    <span class="count">122</span>
+                </li>
+                <li>
+                    <span>Online:</span>
+                    <span class="count green">44</span>
+                </li>
+                <li>
+                    <span>Sellers:</span>
+                    <span class="count">23</span>
+                </li>
+                <li>
+                    <span>User with moeny:</span>
+                    <span class="count red">12</span>
+                </li>
+            </ul>
+        </div>
+        <div class="body">
+            <form class="body__filters">
+                <div class="body__filter_info">
+                    ID <span>2</span>
+                </div>
+                <div class="body__filter-column">
+                    <div class="body__filter-field">
+                        <label for="filter-admin_user">Select admin_user:</label>
+                        <select id="filter-admin_user" name="admin_user" id="" class="select">
+                            <option value="null"></option>
+                            <option value="admin_user1">admin_user 1</option>
+                            <option value="admin_user2">admin_user 2</option>
+                        </select>
+                    </div>
+                    <ul class="body__filter-statistics">
+                        <li>
+                            <span>Count products:</span>
+                            <span class="count">0</span>
+                        </li>
+                        <li>
+                            <span>Сount of sold:</span>
+                            <span class="count">44</span>
+                        </li>
+                        <li>
+                            <span>Count bought:</span>
+                            <span class="count">0</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="body__filter-column">
+                    <div class="body__filter-field">
+                        <label for="filter-username">Username</label>
+                        <input id="filter-username" type="text" name="username">
+                    </div>
+                    <div class="body__filter-field">
+                        <label for="filter-balance">Balance</label>
+                        <input id="filter-balance" type="text" name="balance">
+                    </div>
+                    <div class="body__filter-field">
+                        <label for="filter-email">Email</label>
+                        <input id="filter-email" type="text" name="email">
+                    </div>
+                </div>
+                <div class="body__filter-column">
+                    <div class="body__filter-field">
+                        <label for="filter-username">Username</label>
+                        <input id="filter-username" type="text" name="username">
+                    </div>
+                    <div class="body__filter-field">
+                        <label for="filter-balance">Balance</label>
+                        <input id="filter-balance" type="text" name="balance">
+                    </div>
+                    <div class="body__filter-field">
+                        <label for="filter-email">Email</label>
+                        <input id="filter-email" type="text" name="email">
+                    </div>
+                </div>
+                <div class="body__filter-column">
+                    <div class="body__filter-field">
+                        <label for="filter-username">Username</label>
+                        <input id="filter-username" type="text" name="username">
+                    </div>
+                </div>
+
+                <div class="body__filter-buttons">
+                    <button class="button button-success">SAVE</button>
+                    <button class="button button-warning">DELETE TOVARS</button>
+                    <button class="button button-error">BLOCK USERS</button>
+                </div>
+            </form>
+            <div class="body_table admin_user__table">
+                <div class="search">
+                    <input type="text" name="search" placeholder="Search user" class="dark-input">
+                    <img src="/images/dist/search.png" alt="">
+                </div>
+                <div class="main_table">
+                    <div class="main_table__content">
+                        <div class="thead">
+                            <div class="col">ID</div>
+                            <div class="col">Username</div>
+                            <div class="col">Balance</div>
+                            <div class="col">Seller mode</div>
+                            <div class="col">Data Reg</div>
+                            <div class="actions"></div>
+                        </div>
+                        <div class="row">
+                            <span class="circle circle-red"></span>
+                            <div class="col">1</div>
+                            <div class="col">Slwsha</div>
+                            <div class="col">$228</div>
+                            <div class="col">Hui znaet</div>
+                            <div class="col">12-08-1990</div>
+                            <div class="actions">
+                                <div class="burger">
+                                    <span></span>
+                                </div>
+                                <a href="/" class="block">BLOCK</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <span class="circle circle-green"></span>
+                            <div class="col">2</div>
+                            <div class="col">BigBabyTape</div>
+                            <div class="col">$228</div>
+                            <div class="col">Hui znaet</div>
+                            <div class="col">120-3-1222</div>
+                            <div class="actions">
+                                <div class="burger">
+                                    <span></span>
+                                </div>
+                                <a href="/" class="block">BLOCK</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--#include virtual="/parts/footer.html" -->

@@ -1,0 +1,21 @@
+@import '_config';
+@import 'media.scss';
+@import 'blocks/**/*';
+
+body{
+    background-color: #000;
+    @include device1200 { 
+        background-color: #fff; 
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+

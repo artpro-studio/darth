@@ -1,0 +1,40 @@
+.admin_category {
+    .body_table {
+        .row {
+            padding-left: 35px;
+            position: relative;
+            .actions {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 170px;
+                height: 100%;
+            }
+        }
+        .col {
+            width: 15%;
+            text-align: left;
+            padding-right: 10px;
+        }
+    }
+}
+
+@include device1400(){
+    .admin_category {
+        .body_table {
+            .col {
+                width: 20%;
+            }
+        }
+    }
+}
+@include device1050(){
+    .admin_category .body_table .row .actions {
+        width: 120px;
+    }
+}
+@include device650(){
+    .admin_category .body_table .row .actions {
+        position: relative;
+    }
+}
