@@ -26,6 +26,10 @@
             width: calc((100% - 200px) / 5);
         }
     }
+
+    .body_table .col:first-child {
+        width: calc((100% - 200px)/ 5 + 35px)
+    }
 }
 @include device1050(){
     .admin_user__table {

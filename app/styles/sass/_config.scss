@@ -81,3 +81,7 @@ body{
 	position: relative;
 	overflow-x: hidden;
 }
+
+input, select, textarea {
+	font-family: $userfont;
+}
