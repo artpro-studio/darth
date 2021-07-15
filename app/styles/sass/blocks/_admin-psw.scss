@@ -52,11 +52,20 @@
     }
 }
 
+@include device1160(){ 
+    .admin_psw {
+        .content .body {
+            &__filter-column.wide {
+                flex: 0 0 450px;
+            }
+        }
+    }
+}
 @include device650(){ 
     .admin_psw {
         .content .body {
             &__filter-column.wide {
-                min-width: none;
+                flex: 0 0 100%;
             }
         }
     }
