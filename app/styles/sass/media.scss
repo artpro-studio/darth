@@ -8,6 +8,11 @@
         @content;
     }
 }
+@mixin device1160{
+    @media (max-width: 1160px) {
+        @content;
+    }
+}
 @mixin device1050{
     @media (max-width: 1050px) {
         @content;
