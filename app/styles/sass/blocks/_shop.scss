@@ -1,0 +1,78 @@
+.shop{
+
+  .body_table{
+    .row{
+      position: relative;
+    }
+    .actions{
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .col{
+      width: 19%;
+    }
+  }
+}
+@include device1400(){
+  .shop{
+    .body__filters.flex-no .body__filter-column{
+      width: 28%;
+      margin-right: 30px;
+    }
+    .body_table{
+      .col{
+        width: 17%;
+      }
+    }
+
+  }
+}
+@include device1200(){
+  .shop {
+    .body__filters.flex-no .body__filter-column {
+      width: 28%;
+      margin-right: 20px;
+    }
+  }
+}
+@include device1050(){
+  .shop {
+    .body__filters.flex-no .body__filter-column {
+      width: 45%;
+      margin-right: 20px;
+    }
+  }
+}
+@include device996(){
+  .shop {
+    .body__filters.flex-no .body__filter-column {
+      width: 30%;
+      margin-right: 20px;
+    }
+  }
+}
+@include device768(){
+  .shop{
+    .body__filters.flex-no .body__filter-column {
+      width: 45%;
+      margin-right: 20px;
+    }
+    .body_table{
+      .col{
+        width: 15%;
+      }
+      .actions{
+        position: relative;
+      }
+    }
+  }
+}
+@include device650(){
+  .shop{
+    .body__filters.flex-no .body__filter-column {
+      width: 100%;
+      margin-right: 0px;
+    }
+  }
+}
