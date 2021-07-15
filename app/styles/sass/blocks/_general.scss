@@ -262,6 +262,12 @@
             padding: 20px 0 50px 40px;
             display: flex;
             position: relative;
+            &.flex-no{
+                flex-wrap: wrap;
+                .body__filter-column{
+                    width: 20%;
+                }
+            }
         }
 
         &__filter_info {
@@ -307,6 +313,22 @@
 
         &__filter-field {
             margin-bottom: 15px;
+            &.black{
+                label{
+                    margin-bottom: 5px;
+                }
+                select{
+                    background-color: transparent;
+                    border: 1px #bac5ba solid;
+                    color: #bac5ba;
+                    outline: transparent;
+                    option{
+                        background-color: transparent;
+                        color: #000;
+                    }
+                }
+
+            }
 
             &.big input, select{
                 height: 50px;
@@ -314,7 +336,7 @@
             input, select {
                 width: 200px;
                 height: 25px;
-                padding: 10px;
+                padding: 0 10px;
                 border: 0;
             }
             label {
@@ -331,7 +353,14 @@
             right: 0;
             font-size: 14px;
             font-weight: 200;
-
+            .button-tap{
+                background-color: #bac5ba;
+                color: #032331 !important;
+                transition: .4s all;
+                &:hover{
+                    background-color: #ccd5cc;
+                }
+            }
             .button {
                 width: 130px;
                 height: 40px;
@@ -517,6 +546,9 @@
         min-height: 340px;
         padding: 54px 77px;
         margin: 1%;
+        &.full{
+            width: 100%;
+        }
         &_title{
             color: #bac5ba;
             font-size: 1.1em;

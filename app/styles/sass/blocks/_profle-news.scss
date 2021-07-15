@@ -16,14 +16,30 @@
         font-weight: 100;
         margin: 0;
         padding: 0;
-        margin-bottom: 7px;
+        margin-bottom: 10px;
         a{
-          color: var(--blue
-
-
-
-          );
+          color: var(--blue);
         }
+      }
+    }
+  }
+  &__list{
+    &_title{
+      margin-bottom: 15px;
+      h4{
+        font-size: 1.1em;
+        font-weight: bold;
+      }
+    }
+    &_item{
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px var(--ligth-blue) solid;
+      margin-bottom: 15px;
+      padding-bottom: 5px;
+      p{
+        font-size: 12px;
+        font-weight: 300;
       }
     }
   }

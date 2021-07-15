@@ -13,6 +13,19 @@ $(document).ready(function () {
 		e.preventDefault()
 		$('.content .left').addClass('active')
 	})
+
+	$('.settings__password img').on('click', function(){
+		let parent = $(this).parents('.settings__password_field')
+		if(parent.hasClass('hidden-pass')){
+			parent.removeClass('hidden-pass')
+			parent.find('input').attr('type', 'text');
+			$(this).attr('src', 'images/dist/close-pass.png')
+		}else{
+			parent.addClass('hidden-pass')
+			parent.find('input').attr('type', 'password');
+			$(this).attr('src', 'images/dist/Show-pass.png')
+		}
+	});
 })
 
 $('body').on('click', '.password-control', function(){
