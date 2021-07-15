@@ -3,6 +3,7 @@
 .button {
     border: none;
     cursor: pointer;
+    transition: all .3s;
 }
 .button-pink {
     background-color:var(--pink);
@@ -330,6 +331,15 @@
 
             }
 
+            &.textarea {
+                height: 100%;
+
+                textarea {
+                    height: calc(100% - 21px);
+                    width: 100%;
+                }
+            }
+
             &.big input, select{
                 height: 50px;
             }
@@ -368,6 +378,50 @@
             }
         }
 
+        &__search {
+            background-color: var(--ligth-blue);
+            padding: 10px 15px 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .search_input {
+                flex: 1 1 auto;
+                padding-right: 25px;
+                position: relative;
+                input {
+                    width: 100%;
+                    padding-right: 55px;
+                }
+                img {
+                    position: absolute;
+                    width: 15px;
+                    height: 15px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 55px;
+                }
+            }
+
+            .button {
+                text-transform: uppercase;
+                background-color: #025426;
+                transition: all .3s;
+                text-decoration: none;
+                color: #fff;
+                font-size: .8em;
+                padding: 15px 0;
+                width: 130px;
+                text-align: center;
+                &:hover {
+                    background-color: #02612c;
+                }
+                &:active {
+                    background-color: #02441f;
+                }
+            }
+        }
+
+
     }
 }
 
@@ -398,6 +452,9 @@
         font-size: 0.8em;
         color: #fff;
         margin-bottom: 20px;
+        .col {
+            background-color: inherit;
+        }
     }
 
     .col {
@@ -421,6 +478,7 @@
     }
 
     .row {
+        background-color: var(--dark-blue);
         margin-bottom: 10px;
         display: flex;
         text-align: center;
@@ -869,6 +927,18 @@
                 .button{
                     width: 100%;
                     margin-bottom: 15px;
+                }
+            }
+            &__search {
+                .search_input {
+                    padding-right: 15px;
+                    img {
+                        right: 30px;
+                    }
+                }
+                .button {
+                    padding: 10px 0;
+                    width: 90px;
                 }
             }
         }

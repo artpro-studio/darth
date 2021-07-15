@@ -1,0 +1,63 @@
+.admin_psw {
+    .content .body {
+        background-color: var(--ligth-blue);
+
+        &__filters {
+            padding-right: 50px;
+        }
+
+        &__filter-field label {
+            &.green {
+                color: #8bb739;
+            }
+            &.blue {
+                color: #20aab6;
+            }
+            &.pink {
+                color: #ae1ec5;
+            }
+        }
+
+        &__filter-column.wide {
+            flex: 1 0 auto;
+            min-width:200px;
+
+            margin-right: 0;
+            input {
+                width: 100%;
+            }
+        }
+
+       &__filter-buttons {
+           .button-success {
+                background-color: #07501e;
+                &:hover {
+                    background-color: #085d23;
+                }
+                &:active {
+                    background-color: #053e17;
+                }
+           }
+           .button-error {
+                background-color: #451217;
+                &:hover {
+                    background-color: #52161b;
+                }
+                &:active {
+                    background-color: #330d11;
+                }
+           }
+       }
+        
+    }
+}
+
+@include device650(){ 
+    .admin_psw {
+        .content .body {
+            &__filter-column.wide {
+                min-width: none;
+            }
+        }
+    }
+}

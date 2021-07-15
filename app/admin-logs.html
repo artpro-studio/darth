@@ -1,0 +1,127 @@
+<!--#set var="title" value="OptimizedHTML 5" -->
+<!--#include virtual="/parts/header.html" -->
+
+<section class="admin_logs">
+    <div class="header">
+        <div class="header__left">
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <a href="/" class="header__logo">
+                <img src="images/dist/logo.png" alt="Darth Maul Shop">
+            </a>
+        </div>
+
+        <div class="header__title">
+            ADMIN PANEL
+        </div>
+    </div>
+    <div class="content">
+        <div class="left">
+            <div class="menu">
+                <div class="user">
+                    <span class="menu__close">
+                        <span></span>
+                    </span>
+                    <img src="images/dist/user.png" alt="Alesha" class="user-icon">
+                    <span>
+                        <span>Alesha</span>
+                        <span class="green">Administator</span>
+                    </span>
+                    <a href="/">
+                        <img src="images/dist/logout.png" alt="logout" class="logout-icon">
+                    </a>
+                </div>
+
+                <a href="/" class="menu__item">
+                    <span class="figure"></span>
+                    <span>User</span>
+                </a>
+                <a href="/" class="menu__item">
+                    <span class="figure"></span>
+                    <span>Tickets</span>
+                </a>
+                <a href="/" class="menu__item">
+                    <span class="figure"></span>
+                    <span>Deposit History</span>
+                </a>
+                <a href="/" class="menu__item">
+                    <span class="figure"></span>
+                    <span>Category</span>
+                </a>
+                <a href="/" class="menu__item">
+                    <span class="figure"></span>
+                    <span>Logs</span>
+                </a>
+                <a href="/" class="menu__item">
+                    <span class="figure"></span>
+                    <span>News&Contact</span>
+                </a>
+                <a href="/" class="menu__item active">
+                    <span class="figure"></span>
+                    <span>Shop Log</span>
+                </a>
+                <a href="/" class="menu__item">
+                    <span class="figure"></span>
+                    <span>Change Password</span>
+                </a>
+            </div>
+
+            <ul class="statistics">
+                <li>
+                    <span>Total:</span>
+                    <span class="count">122</span>
+                </li>
+                <li>
+                    <span>Online:</span>
+                    <span class="count green">44</span>
+                </li>
+                <li>
+                    <span>Sellers:</span>
+                    <span class="count">23</span>
+                </li>
+                <li>
+                    <span>User with moeny:</span>
+                    <span class="count red">12</span>
+                </li>
+            </ul>
+        </div>
+        <div class="body">
+            <form action="">
+                <div class="body__filters">
+                    <div class="body__filter-column">
+                        <div class="body__filter-field">
+                            <label for="filter-admin_user">Category:</label>
+                            <select id="filter-admin_user" name="category" id="" class="select">
+                                <option value="null"></option>
+                                <option value="val1">category 1</option>
+                                <option value="val2">category 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="body__filter-column">
+                        <div class="body__filter-field">
+                            <label for="filter-admin_user">Seller:</label>
+                            <select id="filter-admin_user" name="category" id="" class="select">
+                                <option value="null"></option>
+                                <option value="val1">category 1</option>
+                                <option value="val2">category 2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="body__search">
+                    <div class="search_input">
+                        <input type="text" name="search" placeholder="All" class="dark-input">
+                        <img src="/images/dist/search.png" alt="">
+                    </div>
+                    <a href="" class="button">search</a>
+                </div>
+            </form>
+            <div class="body_table">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--#include virtual="/parts/footer.html" -->
