@@ -1,6 +1,7 @@
 @import '_config';
 @import 'media.scss';
 @import 'blocks/**/*';
+@import 'node_modules/nouislider/dist/nouislider.min';
 
 body{
     background-color: #000;

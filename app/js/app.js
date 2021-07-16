@@ -1,10 +1,22 @@
 import $ from 'jquery'
-
+import noUiSlider from 'nouislider';
 // // Import vendor jQuery plugin example (not module)
-// require('~/app/libs/mmenu/dist/mmenu.js')
 
+
+var slider = document.getElementById('range-slider');
+
+noUiSlider.create(slider, {
+	start: [20, 80],
+	connect: true,
+	tooltips: true,
+	range: {
+		'min': 0,
+		'max': 100
+	}
+});
 
 $(document).ready(function () {
+
 	$('.menu__close').on('click', function (e) {
 		e.preventDefault()
 		$('.content .left').removeClass('active')

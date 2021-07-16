@@ -35,6 +35,7 @@
 		"webpack-stream": "^6.1.2"
 	},
 	"dependencies": {
-		"jquery": "^3.6.0"
+		"jquery": "^3.6.0",
+		"nouislider": "^15.2.0"
 	}
 }
