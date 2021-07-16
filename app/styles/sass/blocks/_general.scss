@@ -337,11 +337,17 @@
                 textarea {
                     height: calc(100% - 21px);
                     width: 100%;
+                    padding: 10px;
                 }
             }
 
             &.big input, select{
                 height: 50px;
+            }
+
+            input, select, textarea {
+                font-size: .8em;
+                font-weight: 200;
             }
             input, select {
                 width: 200px;
